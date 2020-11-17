@@ -8987,7 +8987,7 @@ _p[73] = {
                 return node.getData("layout") || "right";
             },
             getConnect: function(node) {
-                if (node.getLevel() == 1) return "arc";
+                // if (node.getLevel() == 1) return 'arc';
                 return "poly";
             }
         });
