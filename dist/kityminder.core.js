@@ -1,9 +1,9 @@
 /*!
  * ====================================================
- * Kity Minder Core - v1.4.50 - 2018-09-17
+ * Kity Minder Core - v1.4.50 - 2020-11-17
  * https://github.com/fex-team/kityminder-core
  * GitHub: https://github.com/fex-team/kityminder-core.git 
- * Copyright (c) 2018 Baidu FEX; Licensed BSD-3-Clause
+ * Copyright (c) 2020 Baidu FEX; Licensed BSD-3-Clause
  * ====================================================
  */
 
@@ -3836,13 +3836,13 @@ _p[35] = {
         _p.r(38);
         _p.r(39);
         _p.r(41);
-        _p.r(75);
+        _p.r(76);
+        _p.r(79);
         _p.r(78);
         _p.r(77);
-        _p.r(76);
-        _p.r(78);
-        _p.r(80);
         _p.r(79);
+        _p.r(81);
+        _p.r(80);
         _p.r(0);
         _p.r(1);
         _p.r(2);
@@ -3851,11 +3851,12 @@ _p[35] = {
         _p.r(5);
         _p.r(6);
         _p.r(69);
-        _p.r(73);
+        _p.r(74);
         _p.r(70);
+        _p.r(73);
         _p.r(72);
         _p.r(71);
-        _p.r(74);
+        _p.r(75);
         module.exports = kityminder;
     }
 };
@@ -8969,6 +8970,30 @@ _p[72] = {
     }
 };
 
+//src/template/structure-right.js
+/**
+ * @fileOverview
+ *
+ * 往右布局结构模板
+ *
+ * @author: techird
+ * @copyright: Baidu FEX, 2014
+ */
+_p[73] = {
+    value: function(require, exports, module) {
+        var template = _p.r(31);
+        template.register("structure-right", {
+            getLayout: function(node) {
+                return node.getData("layout") || "right";
+            },
+            getConnect: function(node) {
+                if (node.getLevel() == 1) return "arc";
+                return "poly";
+            }
+        });
+    }
+};
+
 //src/template/structure.js
 /**
  * @fileOverview
@@ -8978,7 +9003,7 @@ _p[72] = {
  * @author: techird
  * @copyright: Baidu FEX, 2014
  */
-_p[73] = {
+_p[74] = {
     value: function(require, exports, module) {
         var template = _p.r(31);
         template.register("structure", {
@@ -9001,7 +9026,7 @@ _p[73] = {
  * @author: along
  * @copyright: bpd729@163.com, 2015
  */
-_p[74] = {
+_p[75] = {
     value: function(require, exports, module) {
         var template = _p.r(31);
         template.register("tianpan", {
@@ -9022,7 +9047,7 @@ _p[74] = {
 };
 
 //src/theme/default.js
-_p[75] = {
+_p[76] = {
     value: function(require, exports, module) {
         var theme = _p.r(32);
         [ "classic", "classic-compact" ].forEach(function(name) {
@@ -9081,7 +9106,7 @@ _p[75] = {
 };
 
 //src/theme/fish.js
-_p[76] = {
+_p[77] = {
     value: function(require, exports, module) {
         var theme = _p.r(32);
         theme.register("fish", {
@@ -9132,7 +9157,7 @@ _p[76] = {
 };
 
 //src/theme/fresh.js
-_p[77] = {
+_p[78] = {
     value: function(require, exports, module) {
         var kity = _p.r(17);
         var theme = _p.r(32);
@@ -9201,7 +9226,7 @@ _p[77] = {
 };
 
 //src/theme/snow.js
-_p[78] = {
+_p[79] = {
     value: function(require, exports, module) {
         var theme = _p.r(32);
         [ "snow", "snow-compact" ].forEach(function(name) {
@@ -9256,7 +9281,7 @@ _p[78] = {
 };
 
 //src/theme/tianpan.js
-_p[79] = {
+_p[80] = {
     value: function(require, exports, module) {
         var theme = _p.r(32);
         [ "tianpan", "tianpan-compact" ].forEach(function(name) {
@@ -9318,7 +9343,7 @@ _p[79] = {
 };
 
 //src/theme/wire.js
-_p[80] = {
+_p[81] = {
     value: function(require, exports, module) {
         var theme = _p.r(32);
         theme.register("wire", {

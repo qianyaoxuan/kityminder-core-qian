@@ -56,6 +56,7 @@
         'src/template/default.js',
         'src/template/structure.js',
         'src/template/filetree.js',
+        'src/template/structure-right.js',
         'src/template/right.js',
         'src/template/fish-bone.js',
 

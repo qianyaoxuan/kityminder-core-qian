@@ -98,6 +98,7 @@ define(function(require, exports, module) {
     require('./template/default');
     require('./template/structure');
     require('./template/filetree');
+    require('./template/structure-right');
     require('./template/right');
     require('./template/fish-bone');
     require('./template/tianpan');
